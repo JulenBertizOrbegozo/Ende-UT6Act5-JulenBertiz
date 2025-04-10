@@ -2,7 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class CuentaTest {
     private Cuenta cuenta;
@@ -39,6 +39,11 @@ public class CuentaTest {
     public void testExtraerDinero() {
         cuenta.extraerDinero(30.0f);
         assertEquals(70.0f, cuenta.getSaldo(), 0.001);
+    }
+
+    @Test
+    public void testCuentaNoNula() {
+        assertNotNull(cuenta);
     }
 
 }
