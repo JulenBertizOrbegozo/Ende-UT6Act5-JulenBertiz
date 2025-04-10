@@ -46,4 +46,8 @@ public class CuentaTest {
         assertNotNull(cuenta);
     }
 
+    @Test
+    public void testNumeroCuentaNoNulo() {
+        assertNotNull(cuenta.getNumero());
+    }
 }
