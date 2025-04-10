@@ -23,5 +23,11 @@ public class CuentaTest {
         assertEquals("ES987654321", cuenta.getNumero());
     }
 
+    @Test
+    public void testSetSaldo() {
+        cuenta.setSaldo(250.0f);
+        assertEquals(250.0f, cuenta.getSaldo(), 0.001);
+    }
+
 
 }
