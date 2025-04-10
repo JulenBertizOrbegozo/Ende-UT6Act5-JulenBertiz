@@ -35,4 +35,10 @@ public class CuentaTest {
         assertEquals(150.0f, cuenta.getSaldo(), 0.001);
     }
 
+    @Test
+    public void testExtraerDinero() {
+        cuenta.extraerDinero(30.0f);
+        assertEquals(70.0f, cuenta.getSaldo(), 0.001);
+    }
+
 }
